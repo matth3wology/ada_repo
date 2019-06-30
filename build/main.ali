@@ -1,0 +1,44 @@
+V "GNAT Lib v2019"
+M P W=b
+P ZX
+
+RN
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK_05
+
+U main%b		main.adb		638c5fd1 NE OO SU IL
+W blackout%s		blackout.adb		blackout.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D blackout.ads		20190630150830 04a2147d blackout%s
+D main.adb		20190630150830 672e4bac main%b
+D system.ads		20190518041255 085b6ffb system%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+G a e
+G c Z b b [main standard 3 11 none]
+G r s av [main standard 3 11 none] [avIP blackout 5 10 none]
+G r c none [main standard 3 11 none] [setid blackout 9 15 none]
+G r c none [main standard 3 11 none] [getid blackout 10 15 none]
+X 6 blackout.ads
+1K9*Blackout 12e13 7|1w6 1r20
+5R10*AV<3R10> 7e15 7|4r20 5r11
+9U15*SetID 7|8s18 11s9
+10U15*GetID 7|9s18 12s9
+X 7 main.adb
+3U11*main 3b11 14l5 14t9
+4r5 OlympicGames{6|5R10} 8m5 8r5 9r5
+5r5 ELA{6|5R10} 11m5 11r5 12r5
+

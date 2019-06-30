@@ -1,0 +1,86 @@
+V "GNAT Lib v2019"
+P ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U blackout%b		blackout.adb		14e0494b OO PK
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+
+U blackout%s		blackout.ads		04a2147d EE OO PF PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-inteio.ads		20190518041256 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-tiinio.ads		20190518041254 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D blackout.ads		20190630150830 04a2147d blackout%s
+D blackout.adb		20190630150830 48fd01ff blackout%b
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D system.ads		20190518041255 085b6ffb system%s
+D s-conca2.ads		20190518041255 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-imgint.ads		20190518041254 02dbe0c2 system.img_int%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20190518041255 ed88f8fb system.storage_elements%b
+D s-stratt.ads		20190518041254 aedef97e system.stream_attributes%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+G a e
+G c Z s s [attackDA blackout 3 10 none]
+G c Z s s [attackDF blackout 3 10 none]
+G c Z s s [attackIP blackout 3 10 none]
+G c Z s b [setid blackout 9 15 none]
+G c Z s b [getid blackout 10 15 none]
+G c Z s s [avDA blackout 5 10 none]
+G c Z s s [avDF blackout 5 10 none]
+G c Z s s [avIP blackout 5 10 none]
+X 1 ada.ads
+16K9*Ada 20e8 11|1r6 1r23 2r6 2r31
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 11|2w10 2r35
+X 7 a-textio.ads
+57K13*Text_IO 727e16 11|1w10 1r27
+508U14*Put_Line 11|8s13
+X 10 blackout.ads
+1K9*Blackout 12l5 12e13 11|4b14 16l5 16t13
+3R10*Attack 3e38 5r20
+5R10*AV<3R10> 7e15 9p15 9r36 10p15 10r29 11|6r29 11r36
+6i9*ID{integer} 11|8r47 13m18
+9U15*SetID 9=22 9>40 11|11b15 14l9 14t14
+9r22 Self{5R10} 11|11b22 13m13
+9i40 NewID{integer} 11|11b40 13r24
+10U15*GetID 10>22 11|6b15 9l9 9t14
+10r22 Self{5R10} 11|6b22 8r42
+
